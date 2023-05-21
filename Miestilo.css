@@ -1,10 +1,73 @@
-h1 {
-    color: black;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.titulos {
+    color: rgb(34, 72, 105);
     text-align: center;
     text-transform: uppercase;
     text-decoration-line: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-h4 {
+.textoGrande {
+    flex-direction: column;
+    display: flex;
     text-align: center;
-    color: tomato;
+    color: rgb(34, 31, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.articulo {
+    height: 200px;
+    width: 300px;
+}
+.barra,a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.barraB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+body {
+    background-color: antiquewhite;
+}
+.carrito {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+#conteItemsCarrusel {
+    border: 5px solid black;
+    height: 100px;
+    overflow: hidden;
+}
+.itemCarrusel {
+    border: 1px solid black;
+    height: 100px;
+    position: relative;
+}
+.tarjetaCarrusel {
+    height: 100%;
+}
+.flechasCarrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    Justify-content: space-between;
+    padding: 20px;
+}
+.store {
+    width: 50%;
+    height: 100%;
 }
