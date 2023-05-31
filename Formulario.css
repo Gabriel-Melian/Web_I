@@ -58,3 +58,10 @@ body {
 .fijar {
     margin-top: -135px;
 }
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: rgb(181, 64, 64);
+    padding-top: 20px;
+}

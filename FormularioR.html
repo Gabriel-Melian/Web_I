@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Formulario Registrarse</title>
-        <!--Formulario-->
-        <link rel="stylesheet" type="text/css" href="Formulario.css">
-        
-        
-    </head>
-    <body>
-        
-        <form action="" class="formulario">
-            <h1 class="formulario__titulo">Registrarse</h1>
 
-            <input type="text" class="formulario__input">
-            <label for="" class="formulario__label">Nombre</label>
-            <input type="text" class="formulario__input">
-            <label for="" class="formulario__label">Correo</label>
-            <input type="text" class="formulario__input">
-            <label for="" class="formulario__label">Telefono</label>
-            <input type="text" class="formulario__input">
-            <label for="" class="formulario__label">Mensaje</label>
+<head>
+    <meta charset="utf-8">
+    <title>Formulario Registrarse</title>
+    <!--Formulario-->
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
 
-            <input type="submit" class="formulario__submit">
-        </form>
+
+</head>
+
+<body>
+
+    <form action="" class="formulario" id="form">
+        <h1 class="formulario__titulo">Registrarse</h1>
+
+        <input type="text" class="formulario__input" id="nombre">
+        <label for="" class="formulario__label">Nombre</label>
+        <input type="text" class="formulario__input" id="correo">
+        <label for="" class="formulario__label">Correo</label>
+        <input type="text" class="formulario__input" id="telefono">
+        <label for="" class="formulario__label">Telefono</label>
+        <input type="text" class="formulario__input" id="usuario">
+        <label for="" class="formulario__label">Usuario</label>
+        <input type="text" class="formulario__input" id="contra">
+        <label for="" class="formulario__label">Contraseña</label>
+
+        <input type="submit" class="formulario__submit">
+        <p class="warnings" id="warnings"></p>
+    </form>
+
+    <script src="FormularioValidacion.js">
         
-        <script src="FormularioValidacion.js">
-            
-        </script>
-        
-    </body>
+    </script>
+
+
+</body>
+
 </html>
