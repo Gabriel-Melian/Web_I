@@ -65,3 +65,18 @@ body {
     color: rgb(181, 64, 64);
     padding-top: 20px;
 }
+.barra,a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.barraB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}

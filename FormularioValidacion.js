@@ -33,7 +33,7 @@ form.addEventListener("submit", e=> {
         warnings += "El email es invalido.<br>";
         entrar = true;
     }
-    if (contra.value.length < 8) {
+    if (contra.value.length < 6) {
         warnings += "Contraseña invalida.<br>";
         entrar = true;
     }
@@ -52,7 +52,7 @@ form.addEventListener("submit", e=> {
     else {
         parrafo.innerHTML = "Enviado";
         form.reset();
-        
     }
+    
 
 })
