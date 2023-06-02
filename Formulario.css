@@ -70,6 +70,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    text-decoration: none;
 }
 .barraB {
     display: flex;

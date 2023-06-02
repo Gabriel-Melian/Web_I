@@ -41,7 +41,7 @@
         <div class="textoGrande">
             <h4>MAYORISTA DE ROPA - COMPRA MINIMA ONLINE $20000</h4>
             <h4>VENTA POR MAYOR Y MENOR EN NUESTRA SUCURSAL:</h4>
-            <h4>AV. NORTE 2818 + INFO</h4>
+            <h4>AV. NORTE 2818</h4>
         </div>
 
         <div class="barra">
@@ -440,19 +440,87 @@
 
         <!-- -->
 
+        <div class="cAutomatico">
+            <div class="items">
+                <div class="item">
+                    <img src="./Imagenes/Accesorios5.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico2.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico3.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico4.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico6.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico7.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico8.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico9.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico10.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./Imagenes/FondoClasico11.jpg" />
+                </div>
+            </div>
+        </div>
+        <script src="cAutomatico.js"> </script>
 
+        <!-- -->
 
-        <form action="" class="formulario" id="formIndex">
-            <link rel="stylesheet" type="text/css" href="Formulario.css">
+        <form action="" class="formulario" id="formIndex" style="background-color: aliceblue;">
+            <div style="background-color: aliceblue;">
 
-            <h1 class="formTitulo">Danos tu opinion!</h1>
+                <link rel="stylesheet" type="text/css" href="Formulario.css">
 
-            <input type="text" class="formInput" id="consulta">
-            <!--<label for="" class="formLabel">Escribe aqui tu</label>-->
+                <h1 class="formTitulo">Deja tu consulta!</h1>
 
-            <input type="submit" class="formSubmit">
-            <p class="warning" id="warning"></p>
+                <input type="text" class="formInput" id="consulta">
+                <!--<label for="" class="formLabel">Escribe aqui tu</label>-->
+
+                <input type="submit" class="formSubmit">
+                <p class="warning" id="warning"></p>
+
+            </div>
+            
         </form>
+
+        <script>
+
+            const consulta = document.getElementById("consulta");
+            const form = document.getElementById("formIndex");
+            const parrafo = document.getElementById("warning");
+
+            form.addEventListener("submit", e=> {
+                e.preventDefault();
+                let warnings = "";
+                let entrar = false;
+                parrafo.innerHTML = "";
+                if (consulta.value.length < 4) {
+                    warnings += "Su consulta es muy corta.";
+                    entrar = true;
+                }
+                if (entrar) {
+                    parrafo.innerHTML = warnings;
+                }
+                else {
+                    parrafo.innerHTML = "Enviado";
+                    form.reset();
+                }
+                
+            })
+
+        </script>
 
         <div class="logoIzq">
             <h4> 1987 Store - Todos los derechos reservados.</h4>
@@ -466,5 +534,6 @@
             <img src="./Imagenes/footer_logo_1.jpg" height="28"/>
             
         </div>
+
     </body>
 </html>
