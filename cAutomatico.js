@@ -27,3 +27,4 @@ carrusel.addEventListener("mouseout", () => {
 });
 
 start();
+//Carrusel automatico con JavaScript.

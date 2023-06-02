@@ -37,6 +37,6 @@ form.addEventListener("submit", e=> {
         parrafo.innerHTML = "Enviado";
         form.reset();
     }
-    
+    //Validacion
 
 })

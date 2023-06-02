@@ -166,7 +166,7 @@
     display: flex;
     align-items: center;
 }
-.items {/*Carrusel automatico con Js*/
+.items {/*Carrusel automatico con JavaScript*/
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
