@@ -19,6 +19,7 @@ form.addEventListener("submit", e=> {
     e.preventDefault();
     let warnings = "";
     let entrar = false;
+    let datos = "";
     parrafo.innerHTML = "";
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (!regexEmail.test(correo.value)) {
@@ -34,7 +35,10 @@ form.addEventListener("submit", e=> {
         parrafo.innerHTML = warnings;
     }
     else {
-        parrafo.innerHTML = "Enviado";
+        datos += "Correo: " + correo.value + "<br>";
+        datos += "Contra: " + contra.value + "<br>";
+
+        parrafo.innerHTML = "Enviado<br><br>Datos ingresados:<br>" + datos;
         form.reset();
     }
     //Validacion

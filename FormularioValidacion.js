@@ -22,6 +22,7 @@ form.addEventListener("submit", e=> {
     e.preventDefault();
     var numbers = /^[0-9]+$/;
     let warnings = "";
+    let datos = "";
     let entrar = false;
     parrafo.innerHTML = "";
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -50,7 +51,12 @@ form.addEventListener("submit", e=> {
         parrafo.innerHTML = warnings;
     }
     else {
-        parrafo.innerHTML = "Enviado";
+        datos += "Nombre: " + nombre.value + "<br>";
+        datos += "Correo: " + correo.value + "<br>";
+        datos += "Teléfono: " + telefono.value + "<br>";
+        datos += "Usuario: " + usuario.value + "<br>";
+
+        parrafo.innerHTML = "Enviado<br><br>Datos ingresados:<br>" + datos;
         form.reset();
     }
     //Validacion.
