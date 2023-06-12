@@ -474,7 +474,75 @@
         </div>
         <script src="cAutomatico.js"> </script>
 
-        <!-- -->
+        <!-- Falta terminar -->
+
+        <div class="contenedorCarru">
+            
+            <div>
+                <a onclick="backImage()">
+                    <img src="./Imagenes/Flechaizquierda2.png" width="20px">
+                </a>
+            </div>
+
+            <div class="carruselArray">
+            <img src="./Imagenes/imgPortada.jpg" alt="" id="imgC">
+            </div>
+
+            <div>
+                <a onclick="nextImage()">
+                    <img src="./Imagenes/Flechaderecha2.png" width="20px">
+                </a>
+            </div>
+
+        </div>
+        
+        
+        <script>
+            var imagen=[];
+            imagen[0]="./Imagenes/imgPortada.jpg";
+            imagen[1]="./Imagenes/imgPortata2.jpg";
+            imagen[2]="./Imagenes/zoe-cOBuc8-d2hg-unsplash.jpg";
+            imagen[3]="./Imagenes/zoe-NKjIT7u5nXE-unsplash.jpg";
+            var i=0;
+
+            function backImage() {
+            
+            if (i==0){
+                i = imagen.length-1;
+                document.getElementById("imgC").src = imagen[i];
+            } else {
+                i--;
+                document.getElementById("imgC").src = imagen[i];
+            }
+            }
+
+            function nextImage() {
+
+            if (i == imagen.length-1) {
+                i = 0;
+                document.getElementById("imgC").src = imagen[i];
+            } else {
+                i++;
+                document.getElementById("imgC").src = imagen[i];
+            }
+            }
+
+        </script>
+
+        <div class="logoIzq">
+            <h4> 1987 Store - Todos los derechos reservados.</h4>
+            <a href="#">
+                <i><img src="./Imagenes/Logo_QR Data Fiscal.png" height="70"/></i>
+            </a>
+            
+        </div>
+
+        <div class="logoDer">
+            <img src="./Imagenes/footer_logo_1.jpg" height="28"/>
+            
+        </div>
+
+        <!--Falta terminar-->
 
         <form action="" class="formulario" id="formIndex" style="background-color: aliceblue;">
             <div style="background-color: aliceblue;">
@@ -519,19 +587,6 @@
             })
 
         </script>
-
-        <div class="logoIzq">
-            <h4> 1987 Store - Todos los derechos reservados.</h4>
-            <a href="#">
-                <i><img src="./Imagenes/Logo_QR Data Fiscal.png" height="70"/></i>
-            </a>
-            
-        </div>
-
-        <div class="logoDer">
-            <img src="./Imagenes/footer_logo_1.jpg" height="28"/>
-            
-        </div>
 
     </body>
 </html>

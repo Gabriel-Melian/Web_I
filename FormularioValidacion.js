@@ -10,7 +10,15 @@ for (var i=0; i<inputs.length; i++) {
     })
 }
 
+function reiniciar() {
+    var labels = document.getElementsByClassName('formulario__label');
+    for (var i = 0; i < labels.length; i++) {
+      labels[i].classList.remove('fijar');
+    }
+}
+
 const nombre = document.getElementById("nombre");
+nombre.focus();
 const correo = document.getElementById("correo");
 const telefono = document.getElementById("telefono");
 const usuario = document.getElementById("usuario");
@@ -58,6 +66,8 @@ form.addEventListener("submit", e=> {
 
         parrafo.innerHTML = "Enviado<br><br>Datos ingresados:<br>" + datos;
         form.reset();
+        reiniciar();
+        nombre.focus();
     }
     //Validacion.
 

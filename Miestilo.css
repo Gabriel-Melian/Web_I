@@ -193,3 +193,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.carruselArray img {
+    width: 300px;
+}
+.contenedorCarru {
+    display: flex;
+    width: 650px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+}
